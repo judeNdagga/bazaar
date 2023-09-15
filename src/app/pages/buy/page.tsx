@@ -1,64 +1,44 @@
-import prisma from "../../../lib/db/prisma";
-import { redirect } from "next/navigation";
+import CarCard from "@/app/components/CarCard";
+import prisma from "@/lib/db/prisma";
+import Image from "next/image";
+import Link from "next/link"
 
-export const metadata = {
-  title: "Add Product - Bazaar",
-};
-
-async function addProduct(formData: FormData) {
-  "use server";
-
-  const name = formData.get("name")?.toString();
-  const description = formData.get("description")?.toString();
-  const imageUrl = formData.get("imageUrl")?.toString();
-  const price = Number(formData.get("price") || 0);
-
-  if (!name || !description || !imageUrl || !price) {
-    throw Error("Missing Required Fields");
-  }
-
-  await prisma.product.create({
-    data: { name, description, imageUrl, price },
+export default async function BuyHomePage() {
+  const products = await prisma.car.findMany({
+    orderBy: { id: "desc" },
   });
 
-  redirect("/");
-}
-export default function BuyPage() {
-  return (
+  return(
     <div>
-      <h1 className="mb-3 text-lg font-bold">Add Product</h1>
-      <form action="addProduct">
-        <input
-          required
-          name="name"
-          placeholder="Name"
-          className="input-bordered input mb-3 w-full"
+      <div className="hero rounded-xl bg-base-200">
+        <div className="hero-content flex-col lg:flex-row">
+        <Image
+        src={products[0].imageUrl}
+        alt={products[0].name}
+        width={800}
+        height={800}
+        className="w-full max-w-sm rounded-lg shadow-2xl"
+        priority
         />
-        <textarea
-          name="description"
-          required
-          placeholder="Description"
-          className="textarea-bordered textarea mb-3 w-full"
-        />
-        <input
-          required
-          name="imageUrl"
-          placeholder="Image Url"
-          type="url"
-          className="input-bordered input mb-3 w-full"
-        />
-        <input
-          required
-          name="price"
-          placeholder="Price"
-          type="number"
-          className="input-bordered input mb-3 w-full"
-        />
+        <div>
+          <h1 className="text-5xl font-bold">{products[0].name}</h1>
+          <p className="py-6">{products[0].description}</p>
+          <Link
+          href={"products/" + products[0].id}
+          className="btn btn-primary"
+          >
+            Check it out
+          </Link>
+        </div>
+        </div>
+       
+      </div>
 
-        <button type="submit" className="btn bg-rose-500 btn-block">
-          Add Product
-        </button>
-      </form>
+      <div className="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        {products.slice(1).map((car) => (
+          <CarCard car={car} key={car.id} />
+        ))}
+      </div>
     </div>
-  );
+  )
 }
