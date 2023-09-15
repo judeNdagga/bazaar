@@ -16,7 +16,7 @@ export default async function BuyHomePage() {
         src={products[0].imageUrl}
         alt={products[0].name}
         width={800}
-        height={800}
+        height={400}
         className="w-full max-w-sm rounded-lg shadow-2xl"
         priority
         />
