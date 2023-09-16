@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link"
 
 export default async function BuyHomePage() {
-  const products = await prisma.car.findMany({
+  const cars = await prisma.car.findMany({
     orderBy: { id: "desc" },
   });
 
@@ -13,18 +13,18 @@ export default async function BuyHomePage() {
       <div className="hero rounded-xl bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
         <Image
-        src={products[0].imageUrl}
-        alt={products[0].name}
+        src={cars[0].imageUrl}
+        alt={cars[0].name}
         width={800}
         height={400}
         className="w-full max-w-sm rounded-lg shadow-2xl"
         priority
         />
         <div>
-          <h1 className="text-5xl font-bold">{products[0].name}</h1>
-          <p className="py-6">{products[0].description}</p>
+          <h1 className="text-5xl font-bold">{cars[0].name}</h1>
+          <p className="py-6">{cars[0].description}</p>
           <Link
-          href={"products/" + products[0].id}
+          href={"../../cars/" + cars[0].id}
           className="btn btn-primary"
           >
             Check it out
@@ -35,7 +35,7 @@ export default async function BuyHomePage() {
       </div>
 
       <div className="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-        {products.slice(1).map((car) => (
+        {cars.slice(1).map((car) => (
           <CarCard car={car} key={car.id} />
         ))}
       </div>

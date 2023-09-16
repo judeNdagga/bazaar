@@ -11,7 +11,7 @@ export default function CarCard({ car }: CarCardProps) {
   const isNew = Date.now() - new Date(car.createdAt).getTime() < 1000 * 60 * 60 * 24 * 7;
   return (
     <Link
-      href={"/products/" + car.id}
+      href={"../../cars/" + car.id}
       className="card w-full bg-base-100 hover:shadow-xl transition-shadow"
     >
 

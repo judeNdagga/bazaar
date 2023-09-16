@@ -7,10 +7,9 @@ interface HomePageProps {
 export default function HomePage() {
   return (
     <div>
-      <div className="relative">
-        <div className="relative">
-          <NavBar />
-        </div>
+      <NavBar />
+      
+        
         
         <div className="relative flex flex-col items-center justify-center h-screen space-y-8">
           <Link href="/pages/buy">
@@ -25,7 +24,7 @@ export default function HomePage() {
             </button>
           </Link>
         </div>
-      </div>
+      
     </div>
   );
 }
