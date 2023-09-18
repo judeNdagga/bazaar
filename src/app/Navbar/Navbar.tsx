@@ -4,6 +4,9 @@ import logo from "@/assets/logo.png"
 import { redirect } from "next/navigation";
 import { getCart } from "@/lib/db/cart";
 import ShoppingCartButton from "./ShoppingCartButton";
+import UserMenuButton from "./UserMenuButton";
+import { getServerSession } from "next-auth";
+import { authOptions } from "../api/auth/[...nextauth]/route";
 
 
 export async function searchProducts(formData: FormData) {
@@ -18,6 +21,7 @@ export async function searchProducts(formData: FormData) {
 }
 
 export default async function NavBar() {
+  const session = await getServerSession(authOptions);
   const cart = await getCart();
 
   return (
@@ -45,6 +49,7 @@ export default async function NavBar() {
                   </div>
                 </form>
               <ShoppingCartButton cart={cart}/>
+              <UserMenuButton session={session}/>
               </div>
       </div>
     </div>
