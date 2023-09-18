@@ -1,26 +1,28 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import NavBar from "./Navbar/Navbar";
+import Footer from "./Footer";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Bazaar CarShop',
-  description: 'A car trading app',
-}
+  title: "Bazaar CarShop",
+  description: "A car trading app",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className='p-4 max-w-7xl m-auto min-w-[300px] z-10'>
-        {children}
-        </main>
-        </body>
+        <NavBar />
+        <main className="max-w-full m-auto min-w-[300px] z-10 bg-base-300">{children}</main>
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }

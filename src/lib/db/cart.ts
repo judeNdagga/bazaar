@@ -5,6 +5,11 @@ import { cookies } from "next/dist/client/components/headers";
 export type CartWithProducts = Prisma.CartGetPayload<{
   include: { items: { include: { car: true } } };
 }>;
+
+export type CartItemWithProduct = Prisma.CartItemGetPayload<{
+  include: { car: true };
+}>;
+
 export type ShoppingCart = CartWithProducts & {
   size: number;
   subtotal: number;
