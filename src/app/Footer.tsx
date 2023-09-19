@@ -3,6 +3,7 @@ import logo from "@/assets/logo.png"
 export default function Footer(){
     return(
         <>
+        
         <footer className="footer p-10 bg-amber-950 text-gray-100">
   <nav>
     <header className="footer-title text-amber-300">Services</header> 
@@ -25,7 +26,7 @@ export default function Footer(){
     <a className="link link-hover">Cookie policy</a>
   </nav>
 </footer> 
-<footer className="footer px-10 py-4 border-t bg-amber-950 text-gray-100 border-base-300">
+<footer className="footer px-10 py-4 border-t bg-amber-950 text-gray-100 border-base-300 absolute">
   <aside className="items-center grid-flow-col">
     <Image 
     src={logo}
