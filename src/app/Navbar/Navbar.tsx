@@ -25,10 +25,10 @@ export default async function NavBar() {
   const cart = await getCart();
 
   return (
-    <div className="bg-blue-900">
+    <div className="bg-amber-950">
       <div className="navbar max-w-7xl m-auto flex-col sm:flex-row gap-2">
              <div className="flex-1">
-              <Link href="/" className="btn btn-ghost text-xl text-green-300 lowercase">
+              <Link href="/" className="btn btn-ghost text-xl text-amber-200 lowercase">
                 <Image
                 src={logo}
                 height={40}

@@ -20,7 +20,7 @@ export default function ShoppingCartButton({cart}: ShoppingCartButtonProps){
     return(
         <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn-ghost btn-circle btn">
-                <div className="indicator">
+                <div className="indicator text-amber-200">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 space-x-4"
@@ -42,16 +42,16 @@ export default function ShoppingCartButton({cart}: ShoppingCartButtonProps){
             </label>
             <div tabIndex={0} 
             className="card dropdown-content card-compact mt-3 w-52 bg-base-100 shadow z-30">
-                <div className="card-body">
-                    <span className="text-lg font-bold">
+                <div className="card-body bg-amber-200">
+                    <span className="text-lg font-bold text-amber-950">
                         {cart?.size || 0} Items
                     </span>
-                    <span className="text-info">
+                    <span className="text-amber-950">
                         Subtotal: {formatPrice(cart?.subtotal || 0)}
                     </span>
                     <div className="card-actions">
                         <Link href="/cart"
-                        className="btn btn-primary btn-block"
+                        className="btn btn-primary btn-block bg-amber-950 text-amber-300"
                         onClick={closeDropdown}
                         >
                             View Cart

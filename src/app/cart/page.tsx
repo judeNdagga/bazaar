@@ -10,7 +10,7 @@ export const metadata = {
 export default async function CartPage() {
     const cart = await getCart();
   return (
-    <div>
+    <div className="p-4">
       <h1 className="mb-6 text-3xl font-bold">Shopping Cart</h1>
       {cart?.items.map(cartItem =>(
         <CartEntry cartItem={cartItem} key={cartItem.id} setCarQuantity={setCarQuantity} />
@@ -20,7 +20,7 @@ export default async function CartPage() {
         <p className="mb-3 font-bold">
             Total: {formatPrice(cart?.subtotal || 0)}
         </p>
-        <button className="btn btn-primary sm:w-[200px]">Checkout</button>
+        <button className="btn bg-amber-950 text-amber-300 sm:w-[200px]">Checkout</button>
       </div>
     </div>
   );

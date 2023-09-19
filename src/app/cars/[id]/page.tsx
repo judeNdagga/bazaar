@@ -34,7 +34,7 @@ export default async function CarPage({ params: { id } }: CarPageProps) {
   const car = await getCar(id);
 
   return(
-    <div className="flex flex-col lg:flex-row gap-4 lg:items-center">
+    <div className="flex flex-col lg:flex-row gap-4 lg:items-center p-4 bg-amber-300">
         <Image
         src={car.imageUrl}
         alt={car.name}

@@ -40,7 +40,7 @@ if (!session){
 }
 
   return (
-    <div>
+    <div className="p-4">
       <h1 className="mb-3 text-lg font-bold">Add Car</h1>
       <form action={addCar}>
         <input

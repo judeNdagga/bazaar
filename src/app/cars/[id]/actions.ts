@@ -10,18 +10,38 @@ export async function incrementCarQuantity(carId: string) {
   const articleInCart = cart.items.find((item) => item.carId === carId);
 
   if (articleInCart) {
-    await prisma.cartItem.update({
-      where: { id: articleInCart.id },
-      data: { quantity: { increment: 1 } },
-    });
-  } else {
-    await prisma.cartItem.create({
+
+    await prisma.cart.update({
+      where: { id: cart.id},
       data: {
-        cartId: cart.id,
-        carId,
+        items: {
+          update: {
+            where: {id: articleInCart.id},
+            data: {quantity: { increment: 1 }}
+          },
+        }
+      }
+    })
+
+
+    
+  } else {
+
+    await prisma.cart.update({
+      where: { id: cart.id},
+      data: {
+        items: {
+          create: {
+            carId,
         quantity: 1,
-      },
-    });
+          },
+        }
+      }
+    })
+
+
+
+    
   }
 
   revalidatePath("/cars/[id]");
