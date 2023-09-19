@@ -70,7 +70,7 @@ if (!session){
           className="input-bordered input mb-3 w-full"
         />
 
-        <button type="submit" className="btn bg-rose-500 btn-block">
+        <button type="submit" className="btn bg-amber-950 text-amber-300 btn-block">
           Add Car
         </button>
       </form>
