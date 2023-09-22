@@ -42,16 +42,16 @@ export default function ShoppingCartButton({cart}: ShoppingCartButtonProps){
             </label>
             <div tabIndex={0} 
             className="card dropdown-content card-compact mt-3 w-52 bg-base-100 shadow z-30">
-                <div className="card-body bg-amber-200">
-                    <span className="text-lg font-bold text-amber-950">
+                <div className="card-body bg-base-100">
+                    <span className="text-lg font-bold">
                         {cart?.size || 0} Items
                     </span>
-                    <span className="text-amber-950">
+                    <span>
                         Subtotal: {formatPrice(cart?.subtotal || 0)}
                     </span>
                     <div className="card-actions">
                         <Link href="/cart"
-                        className="btn btn-primary btn-block bg-amber-950 text-amber-300"
+                        className="btn btn-primary btn-block bg-primary"
                         onClick={closeDropdown}
                         >
                             View Cart
