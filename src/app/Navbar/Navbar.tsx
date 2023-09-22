@@ -25,17 +25,18 @@ export default async function NavBar() {
   const cart = await getCart();
 
   return (
-    <div className="bg-amber-950">
+    <div className="bg-blue-900">
       <div className="navbar max-w-7xl m-auto flex-col sm:flex-row gap-2">
              <div className="flex-1">
-              <Link href="/" className="btn btn-ghost text-xl text-amber-200 lowercase">
+              <Link href="/" className="btn btn-ghost text-xl text-white lowercase">
                 <Image
                 src={logo}
                 height={40}
                 width={40}
                 alt="bazaar logo"
+                
                 />
-                bazaar
+               <h1 className="font-light font-mono"> bazaar </h1>
               </Link>
               </div> 
               <div className="flex-none gap-2">
@@ -44,7 +45,7 @@ export default async function NavBar() {
                     <input 
                     name="searchQuery"
                     placeholder="Search"
-                    className="input input-bordered w-full min-w-[100px]"
+                    className="input input-bordered w-full min-w-[100px] p-2 h-8"
                     />
                   </div>
                 </form>

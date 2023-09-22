@@ -25,7 +25,7 @@ export default async function BuyHomePage({
   });
 
   return (
-    <div className="p-4 bg-amber-300 flex flex-col items-center">
+    <div className="p-4 flex flex-col items-center">
       {currentPage === 1 && (
         <div className="hero rounded-xl bg-base-100">
           <div className="hero-content flex-col lg:flex-row">
@@ -42,7 +42,7 @@ export default async function BuyHomePage({
               <p className="py-6">{cars[0].description}</p>
               <Link
                 href={"../../cars/" + cars[0].id}
-                className="btn bg-amber-950 text-amber-300"
+                className="btn bg-primary text-white"
               >
                 Check it out
               </Link>
@@ -50,7 +50,7 @@ export default async function BuyHomePage({
           </div>
         </div>
       )}
-      <div className="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 bg-amber-300">
+      <div className="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         {(currentPage === 1 ? cars.slice(1) : cars).map((car) => (
           <CarCard car={car} key={car.id} />
         ))}
