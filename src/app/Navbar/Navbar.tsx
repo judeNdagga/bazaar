@@ -34,8 +34,9 @@ export default async function NavBar() {
                 height={40}
                 width={40}
                 alt="bazaar logo"
+                
                 />
-                bazaar
+               <h1 className="font-light font-mono"> bazaar </h1>
               </Link>
               </div> 
               <div className="flex-none gap-2">
