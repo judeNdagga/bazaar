@@ -20,7 +20,7 @@ export default function ShoppingCartButton({cart}: ShoppingCartButtonProps){
     return(
         <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn-ghost btn-circle btn">
-                <div className="indicator text-amber-200">
+                <div className="indicator text-white">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 space-x-4"

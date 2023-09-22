@@ -12,11 +12,11 @@ export default function HomePage() {
         alt="backgroundpic"
         height={1080}
         width={1000}
-        className="w-screen h-screen absolute"
+        className="w-screen h-screen absolute blur-[1.5px]"
       />
 
-      <div className="relative flex flex-col items-center justify-center h-screen space-y-8">
-        <Link href="/pages/buy">
+      <div className="relative flex flex-col items-center justify-center h-screen text-center">
+        {/* <Link href="/pages/buy">
           <button className="btn btn-wide bg-amber-950">
             <h5 className="text-amber-300">BUY CAR</h5>
           </button>
@@ -26,7 +26,19 @@ export default function HomePage() {
           <button className="btn btn-wide bg-amber-950">
             <h5 className="text-amber-300">SELL CAR</h5>
           </button>
+        </Link> */}
+        <div className="w-[40rem]">
+        <h1 className="text-cyan-50 font-thin text-6xl indent-20">CAR BOND</h1>
+        <p className="text-cyan-400 text-2xl indent-20">Impressive Car Bond Slogan</p>
+        <p className="text-white font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quod voluptatum enim sapiente iusto dolore nobis officia modi aliquid at porro cupiditate ratione similique inventore illo iste, explicabo distinctio animi.
+        </p>
+        <Link href="/pages/buy">
+          <button className="btn btn-wide glass">
+            <h5 className="text-amber-300">OPEN NOW</h5>
+          </button>
         </Link>
+        </div>
+        
       </div>
     </div>
   );

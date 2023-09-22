@@ -4,29 +4,29 @@ export default function Footer(){
     return(
         <>
         
-        <footer className="footer p-10 bg-amber-950 text-gray-100">
+        <footer className="footer p-10 bg-sky-700 text-gray-100">
   <nav>
-    <header className="footer-title text-amber-300">Services</header> 
+    <header className="text-amber-300 uppercase font-bold">Services</header> 
     <a className="link link-hover">Branding</a> 
     <a className="link link-hover">Design</a> 
     <a className="link link-hover">Marketing</a> 
     <a className="link link-hover">Advertisement</a>
   </nav> 
   <nav>
-    <header className="footer-title text-amber-300">Company</header> 
+    <header className="text-amber-300 uppercase font-bold">Company</header> 
     <a className="link link-hover">About us</a> 
     <a className="link link-hover">Contact</a> 
     <a className="link link-hover">Jobs</a> 
     <a className="link link-hover">Press kit</a>
   </nav> 
   <nav>
-    <header className="footer-title text-amber-300">Legal</header> 
+    <header className="text-amber-300 uppercase font-bold">Legal</header> 
     <a className="link link-hover">Terms of use</a> 
     <a className="link link-hover">Privacy policy</a> 
     <a className="link link-hover">Cookie policy</a>
   </nav>
-</footer> 
-<footer className="footer px-10 py-4 border-t bg-amber-950 text-gray-100 border-base-300 absolute">
+
+
   <aside className="items-center grid-flow-col">
     <Image 
     src={logo}
