@@ -25,7 +25,7 @@ export default async function BuyHomePage({
   });
 
   return (
-    <div className="p-4 flex flex-col items-center">
+    <div className="p-4 flex flex-col items-center min-h-screen">
       {currentPage === 1 && (
         <div className="hero rounded-xl bg-base-100">
           <div className="hero-content flex-col lg:flex-row">
