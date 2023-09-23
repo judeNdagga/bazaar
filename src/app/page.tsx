@@ -6,7 +6,7 @@ interface HomePageProps {
 }
 export default function HomePage() {
   return (
-    <div>
+    <div className="min-h-screen">
       <img
         src="https://images.unsplash.com/photo-1611937187627-a427e75ecf65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2021&q=80"
         alt="backgroundpic"
