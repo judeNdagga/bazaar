@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function CarType() {
   return (
-    <div className="min-h-screen">
-      <div className="carousel carousel-end p-4 space-x-4 bg-neutral rounded-box">
+    <div>
+      <div className="carousel carousel-end p-4 space-x-4 bg-neutral rounded-box min-h-screen">
         {/* BMW */}
         <div className="carousel-item relative">
           <div className="absolute text-white p-4">
