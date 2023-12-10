@@ -6,7 +6,9 @@ const nextConfig = {
             {hostname: "images.unsplash.com"},
             {hostname: "lh3.googleusercontent.com"},
             {hostname: "pexels.com"},
-            {hostname: "logowik.com"}
+            {hostname: "logowik.com"},
+            {hostname: "giphy.com"},
+            {hostname: "hips.hearstapps.com"}
         
         ],
     },

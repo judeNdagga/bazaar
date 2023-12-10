@@ -12,7 +12,7 @@ export default function CarCard({ car }: CarCardProps) {
   return (
     <Link
       href={"../../cars/" + car.id}
-      className="card w-full bg-base-100 hover:shadow-xl transition-shadow"
+      className="card w-full bg-white hover:shadow-xl transition-shadow"
     >
 
       <figure>
@@ -30,8 +30,8 @@ export default function CarCard({ car }: CarCardProps) {
           {isNew && <div className="badge badge-secondary">NEW</div>}
         </h2>
       
-        <p>{car.description}</p>
-        <PriceTag price={car.price}></PriceTag>
+        {/* <p>{car.description}</p> */}
+        {/* <PriceTag price={car.price}></PriceTag> */}
         
 
       </div>

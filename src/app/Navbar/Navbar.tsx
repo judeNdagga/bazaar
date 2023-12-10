@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/logo.png"
+import logo from "../../../public/images/logos/logo1.png"
 import { redirect } from "next/navigation";
 import { getCart } from "@/lib/db/cart";
 import ShoppingCartButton from "./ShoppingCartButton";
 import UserMenuButton from "./UserMenuButton";
 import { getServerSession } from "next-auth";
 import { authOptions } from "../api/auth/[...nextauth]/route";
+import VehicleDropdown from "../components/VehicleDropdown";
+import MenuDrawer from "../components/MenuDrawer";
 
 
 export async function searchProducts(formData: FormData) {
@@ -25,22 +27,48 @@ export default async function NavBar() {
   const cart = await getCart();
 
   return (
-    <div className="bg-blue-900 fixed">
-      <div className="navbar max-w-7xl m-auto flex-col sm:flex-row gap-2">
-             <div className="flex-1">
-              <Link href="/" className="btn btn-ghost text-xl text-white lowercase">
-                <Image
-                src={logo}
-                height={40}
-                width={40}
-                alt="bazaar logo"
-                
-                />
-               <h1 className="font-light font-mono"> bazaar </h1>
-              </Link>
-              </div> 
+    <div className="bg-primary fixed w-full z-[2]">
+      <div className="navbar max-w-7xl m-auto flex-col sm:flex-row gap-2 p-[0.1px]">
+      <div className="flex-1 p-3">
+          <Link href="/">
+            <Image src={logo} height={120} width={120} alt="mitsubishi logo" />
+          </Link>
+        </div>
+
+        {/* navbar options */}
+
+        <div className="flex-1">
+          <h1 className="text-black font-semibold font-sans uppercase text-2xl">
+            Mitsubishi motors Uganda
+          </h1>
+        </div>
+
+        {/* services section */}
+
+        <div className="text-black flex p-2">
+        
+          <VehicleDropdown/>
+          
+
+          <Link href="/Servicing">
+            <summary className="btn hover:bg-black hover:text-white p-2 btn-ghost">
+              SERVICING
+            </summary>
+            </Link>
+
+          <Link href="/Dealerships">
+            <summary className="btn hover:bg-black hover:text-white p-2 btn-ghost">
+              DEALERSHIPS
+            </summary>
+            </Link>
+        </div>
+
+        {/* menu section */}
+        <div>
+          <MenuDrawer/>
+        </div>
               <div className="flex-none gap-2">
-                <form action={searchProducts}>
+                {/* <form action={searchProducts}>
                   <div className="form-control">
                     <input 
                     name="searchQuery"
@@ -48,9 +76,9 @@ export default async function NavBar() {
                     className="input input-bordered w-full min-w-[100px] p-2 h-8"
                     />
                   </div>
-                </form>
-              <ShoppingCartButton cart={cart}/>
-              <UserMenuButton session={session}/>
+                </form> */}
+              {/* <ShoppingCartButton cart={cart}/>
+              <UserMenuButton session={session}/> */}
               </div>
       </div>
     </div>

@@ -25,33 +25,14 @@ export default async function BuyHomePage({
   });
 
   return (
-    <div className="p-4 flex flex-col items-center min-h-screen">
-      {currentPage === 1 && (
-        <div className="hero rounded-xl bg-base-100">
-          <div className="hero-content flex-col lg:flex-row">
-            <Image
-              src={cars[0].imageUrl}
-              alt={cars[0].name}
-              width={800}
-              height={400}
-              className="w-full max-w-sm rounded-lg shadow-2xl"
-              priority
-            />
-            <div>
-              <h1 className="text-5xl font-bold">{cars[0].name}</h1>
-              <p className="py-6">{cars[0].description}</p>
-              <Link
-                href={"../../cars/" + cars[0].id}
-                className="btn bg-primary text-white"
-              >
-                Check it out
-              </Link>
-            </div>
-          </div>
-        </div>
-      )}
+    <div className="bg-white min-h-screen p-4">
+      <div className="">
+        <h1 className="text-black card-body text-center text-3xl">
+          DISCOVER MITSUBISHI VEHICLES
+        </h1>
+      </div>
       <div className="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-        {(currentPage === 1 ? cars.slice(1) : cars).map((car) => (
+        {(currentPage === 1 ? cars.slice(0) : cars).map((car) => (
           <CarCard car={car} key={car.id} />
         ))}
       </div>
