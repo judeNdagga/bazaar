@@ -1,10 +1,9 @@
 import Image from "next/image"
-import logo from "@/assets/logo.png"
 export default function Footer(){
     return(
         <>
         
-        <footer className="footer p-10 bg-blue-900 text-gray-100">
+        <footer className="footer p-10 bg-slate-900 text-white relative">
   <nav>
     <header className="text-amber-300 uppercase font-bold">Services</header> 
     <a className="link link-hover">Branding</a> 
@@ -28,13 +27,8 @@ export default function Footer(){
 
 
   <aside className="items-center grid-flow-col">
-    <Image 
-    src={logo}
-    alt="logo"
-    height={40}
-    width={40}
-    />
-    <p className="text-amber-300">Bazaar Ltd. <br/>Affordable cars</p>
+    
+    <p className="text-amber-300">Mitsubishi Motors Ltd.</p>
   </aside> 
   <nav className="md:place-self-center md:justify-self-end">
     <div className="grid grid-flow-col gap-4">

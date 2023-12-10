@@ -38,7 +38,7 @@ export default function SpareParts() {
       vin: vin,
       service_request: service_request,
     };
-    await axios.post(apiEndPoint + "/bookings/servicing/", post);
+    // await axios.post(apiEndPoint + "/bookings/servicing/", post);
   }
 
   return (
