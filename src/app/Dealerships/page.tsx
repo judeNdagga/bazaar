@@ -82,7 +82,13 @@ export default function Dealerships() {
           position={position}
           icon={{
             url: "https://cdn-icons-png.flaticon.com/128/684/684908.png",
-            scaledSize: { width: 60, height: 60 },
+            scaledSize: {
+              width: 60, height: 60,
+              equals: function (other: google.maps.Size): boolean {
+                throw new Error("Function not implemented.");
+              }
+            },
+          
             
             
           }}
