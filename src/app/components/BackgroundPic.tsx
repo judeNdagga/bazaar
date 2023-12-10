@@ -89,7 +89,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
           payments are supported
         </p>
         <div className="text-center pt-4">
-          <Link href="/car-models">
+          <Link href="/pages/buy">
             <button className="btn bg-red-600 border-red-600">
               <h5 className="text-white">Discover More</h5>
             </button>
