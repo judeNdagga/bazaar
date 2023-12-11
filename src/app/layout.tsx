@@ -9,8 +9,8 @@ import FixedDrawer from "./components/FixedDrawer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bazaar CarShop",
-  description: "A car trading app",
+  title: "Mitsubishi Uganda",
+  description: "Mitsubishi",
 };
 
 export default function RootLayout({
