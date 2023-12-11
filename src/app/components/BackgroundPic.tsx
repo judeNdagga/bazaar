@@ -60,7 +60,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
     <div className="h-screen w-full m-auto relative group">
       <motion.div
         // style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full bg-center bg-cover duration-1000"
+        className="w-full min-h-screen bg-center bg-cover duration-1000"
         
         
       >
