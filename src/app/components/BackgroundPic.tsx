@@ -53,18 +53,20 @@ export default function BackgroundPic() {
   };
 
 
+  
+
 const OPTIONS: EmblaOptionsType = {}
 const SLIDE_COUNT = 5
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
   return (
     <div className="h-screen w-full m-auto relative group">
       <motion.div
-        // style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full min-h-screen bg-center bg-cover duration-1000"
         
         
       >
-        <EmblaCarousel slides={SLIDES} options={OPTIONS}/>
+        {/* <EmblaCarousel slides={SLIDES} options={OPTIONS}/> */}
         {/* <Image src={slides[currentIndex].url} alt="pic"
         width={1920}
         height={1080}
