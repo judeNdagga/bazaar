@@ -6,7 +6,7 @@ interface HomePageProps {
 }
 export default function HomePage() {
   return (
-    <div className="hero w-full min-h-screen">
+    <div className="w-full min-h-screen">
     <BackgroundPic/>
     </div>
   );
