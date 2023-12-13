@@ -8,8 +8,8 @@ const nextConfig = {
             {hostname: "pexels.com"},
             {hostname: "logowik.com"},
             {hostname: "giphy.com"},
-            {hostname: "hips.hearstapps.com"}
-        
+            {hostname: "hips.hearstapps.com"},
+            {hostname: "mitsubishicars.com"}
         ],
     },
     experimental: {
