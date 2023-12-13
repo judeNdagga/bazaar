@@ -13,24 +13,29 @@ export default function BackgroundPic() {
   const slides = [
     {
       url: "https://hips.hearstapps.com/hmg-prod/images/2022-mitsubishi-eclipse-cross-101-1612907183.jpg?crop=0.871xw:0.736xh;0.00326xw,0.127xh&resize=1200:*",
-      name: "2024 Mitsubishi Eclipse Cross",
+      name: "Mitsubishi Eclipse Cross",
+      desc: "Incredible Efficiency"
     },
     {
       url: "https://hips.hearstapps.com/hmg-prod/images/2024-mitsubishi-mirage-101-64b94568391dc.jpg?crop=0.800xw:0.478xh;0.0391xw,0.373xh&resize=1200:*",
-      name: "2024 Mitsubishi Mirage",
+      name: "Mitsubishi Mirage",
+      desc: "Ease of Use"
     },
     {
-      url: "https://hips.hearstapps.com/hmg-prod/images/2024-mitsubishi-outlander-sport-103-64b83fa38da65.jpg?crop=0.469xw:0.399xh;0.231xw,0.450xh&resize=1200:*",
-      name: "2024 Mitsubishi Outlander Sport",
+      url: "https://www.mitsubishicars.com/content/dam/mitsubishi-motors-us/images/siteimages/cars/outlander-sport/my24/gallery/2024-mitsubishi-outlander-sport-suv-brown-parked-street.jpg?width=2160&auto=webp&quality=70",
+      name: "Mitsubishi Outlander Sport",
+      desc: "Roaring Elegance"
     },
 
     {
-      url: "https://hips.hearstapps.com/hmg-prod/images/2024-mitsubishi-mirage-g4-103-6508a36ae3654.jpg?crop=0.792xw:1.00xh;0.106xw,0&resize=1200:*",
-      name: "2024 Mitsubishi Mirage G4",
+      url: "https://www.mitsubishicars.com/content/dam/mitsubishi-motors-us/images/siteimages/cars/mirage-g4/my24/gallery/carousel_exterior/2024-mitsubishi-mirage-g4-sedan-white-driving-fast-gallery.jpg",
+      name: "Mitsubishi Mirage G4",
+      desc: "Tailor-made Prospective"
     },
     {
-      url: "https://images.unsplash.com/photo-1596429924638-d1f8a252df7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2067&q=80",
-      name: "Outlander New",
+      url: "https://www.mitsubishicars.com/content/dam/mitsubishi-motors-us/images/siteimages/cars/outlander-phev/my24/gallery/exterior/2024-mitsubishi-outlander-phev-forest.jpg",
+      name: "Mitsubishi Outlander",
+      desc: "Incredible Power"
     },
   ];
 
@@ -72,13 +77,18 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
         className="w-full min-h-screen bg-center bg-cover duration-1000"
         
         
-      >
-        {/* <EmblaCarousel slides={SLIDES} options={OPTIONS}/> */}
-        {/* <Image src={slides[currentIndex].url} alt="pic"
-        width={1920}
-        height={1080}
         
-        /> */}
+      >
+        <motion.div className="absolute text-center pt-4 top-[20%] left-[10%]"
+        animate={{ x: 80 }}
+        transition={{ ease: "easeOut", duration: 1 }}
+        >
+          <Link href="/pages/buy">
+            <button className="btn text-xs text-white bg-slate-900 hover:bg-slate-50 hover:text-slate-900 border-slate-900 btn-circle h-20 w-20 animate-bounce">
+              Discover More
+            </button>
+          </Link>
+        </motion.div>
       </motion.div>
       {/* <div className="w-full h-full">
             <EmblaCarousel slides={SLIDES} options={OPTIONS}/>
@@ -86,24 +96,18 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
       {/* Descriptive content */}
 
       <motion.div
-        className="absolute top-[27%] text-white left-8 w-[40em] h-48 bg-gradient-to-r from-black from-10% via-black via-25% pl-4 pt-6"
+        className="absolute bottom-[5%] text-white left-8 w-[40em] h-48 bg-gradient-to-r pl-4 pt-6"
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 1 }}
       >
-        <motion.h1 className="text-3xl uppercase"
+         <p className="pt-2 uppercase text-sm">
+          {slides[currentIndex].desc}
+        </p>
+        <motion.h1 className="text-7xl text-gray-200 font-light"
         animate={{ fontSize: 30, x: 50 }}
         >{slides[currentIndex].name}</motion.h1>
-        <p className="pt-2">
-          Available with air conditioning, 4x4 and racing mode. Installment
-          payments are supported
-        </p>
-        <div className="text-center pt-4">
-          <Link href="/pages/buy">
-            <button className="btn bg-red-600 border-red-600">
-              <h5 className="text-white">Discover More</h5>
-            </button>
-          </Link>
-        </div>
+       
+        
       </motion.div>
 
       {/* Left Arrow */}

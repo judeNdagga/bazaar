@@ -25,7 +25,7 @@ export default function CarCard({ car }: CarCardProps) {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">
+        <h2 className="card-title text-black">
           {car.name}
           {isNew && <div className="badge badge-secondary">NEW</div>}
         </h2>

@@ -25,7 +25,7 @@ export default function MenuDrawer() {
           {/* Sidebar content here */}
           <Image src={logo} alt="logo" />
           <li className="pt-4">
-            <a href="/car-models">Buy Vehicle</a>
+            <a href="/pages/buy">Buy Vehicle</a>
           </li>
           <li>
             <a>
