@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import { motion, AnimatePresence } from "framer-motion";
@@ -52,8 +52,15 @@ export default function BackgroundPic() {
     setCurrentIndex(slideIndex);
   };
 
+  useEffect(() => {
+  const autoNextSlide = setTimeout(() => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  }, 8000)
 
-  
+  return () => clearTimeout(autoNextSlide);
+}, );
 
 const OPTIONS: EmblaOptionsType = {}
 const SLIDE_COUNT = 5
