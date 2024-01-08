@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <SessionProvider>
         <NavBar />
-        <main className="max-w-full m-auto min-w-[300px] z-10 bg-base-300 min-h-screen">{children}
+        <main className="max-w-full m-auto min-w-[300px] z-10 bg-base-300 min-h-full">{children}
         <FixedDrawer/>
         </main>
         <Footer />

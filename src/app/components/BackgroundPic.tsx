@@ -8,6 +8,7 @@ import Image from "next/image";
 import '../css/embla.css'
 import EmblaCarousel from "./Carousel";
 import { EmblaOptionsType } from "embla-carousel-react";
+import MobileNavbar from "./MobileNavbar";
 export default function BackgroundPic() {
  
   const slides = [
@@ -67,9 +68,7 @@ export default function BackgroundPic() {
   return () => clearTimeout(autoNextSlide);
 }, );
 
-const OPTIONS: EmblaOptionsType = {}
-const SLIDE_COUNT = 5
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+
   return (
     <div className="h-screen w-full m-auto relative group">
       <motion.div
@@ -79,12 +78,13 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
         
         
       >
+        <MobileNavbar/>
         <motion.div className="absolute text-center pt-4 top-[20%] left-[10%]"
         animate={{ x: 80 }}
         transition={{ ease: "easeOut", duration: 1 }}
         >
           <Link href="/pages/buy">
-            <button className="btn text-xs text-white bg-slate-900 hover:bg-slate-50 hover:text-slate-900 border-slate-900 btn-circle h-20 w-20 animate-bounce">
+            <button className="btn text-xs text-white bg-slate-900 hover:bg-slate-50 hover:text-slate-900 border-slate-900 btn-circle h-20 w-20 animate-bounce sm:block hidden">
               Discover More
             </button>
           </Link>
