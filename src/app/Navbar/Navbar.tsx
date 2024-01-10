@@ -36,7 +36,7 @@ export default async function NavBar() {
   // }
 
   return (
-    <div className="bg-primary sm:fixed w-full z-[2]">
+    <div className="bg-primary absolute sm:fixed w-full z-[12]">
       <div className="navbar sm:flex hidden max-w-7xl m-auto flex-col sm:flex-row gap-2 p-[0.1px]">
         <div className="flex-1 p-3">
           <Link href="/">

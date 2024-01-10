@@ -11,10 +11,10 @@ export default function MobileNavbar(){
 
 
   return(
-    <div className="w-full h-full absolute">
+    <div className="w-full h-full absolute z-40">
         {/* mobile button */}
 
-        <div onClick={handleNav} className="block sm:hidden z-[4] text-4xl text-white absolute">
+        <div onClick={handleNav} className="block sm:hidden z-[4] text-4xl text-gray-400 absolute">
                 
         {nav ? <AiOutlineClose/> : <GiHamburgerMenu/>}
 
@@ -27,15 +27,18 @@ export default function MobileNavbar(){
         nav 
         ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
       :
-      "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300" }>
+      "sm:hidden absolute top-0 left-[-120%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300" }>
       <ul>
-        <li className="p-4 text-4xl hover:text-gray-500">
+      <li className="p-4 text-4xl text-gray-200 hover:text-gray-400">
+        <a href="/">Home</a>
+        </li>
+        <li className="p-4 text-4xl text-gray-200 hover:text-gray-400">
         <a href="/pages/buy">Vehicles</a>
         </li>
-        <li className="p-4 text-4xl hover:text-gray-500">
+        <li className="p-4 text-4xl text-gray-200 hover:text-gray-400">
         <a href="/Servicing">Servicing</a>
         </li>
-        <li className="p-4 text-4xl hover:text-gray-500">
+        <li className="p-4 text-4xl text-gray-200 hover:text-gray-400">
         <a href="/Dealerships">Dealerships</a>
         </li>
         
