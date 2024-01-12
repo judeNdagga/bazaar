@@ -5,10 +5,8 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import "../css/embla.css";
-import EmblaCarousel from "./Carousel";
-import { EmblaOptionsType } from "embla-carousel-react";
 import MobileNavbar from "./MobileNavbar";
+import MobileNavbar2 from "./MobileNavbar2";
 export default function BackgroundPic() {
   const slides = [
     {
@@ -73,9 +71,9 @@ export default function BackgroundPic() {
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full min-h-screen bg-center bg-cover duration-1000"
       >
-        <MobileNavbar />
+        <MobileNavbar2 />
         <motion.div
-          className="absolute text-center pt-4 items-center sm:top-[20%] sm:left-[10%]"
+          className="absolute text-center pt-4 bottom-[27%] left-[10%] sm:top-[20%] sm:left-[10%]"
           animate={{ x: 80 }}
           transition={{ ease: "easeOut", duration: 1 }}
         >
@@ -98,7 +96,7 @@ export default function BackgroundPic() {
       >
         <p className="pt-2 uppercase text-sm">{slides[currentIndex].desc}</p>
         <motion.h1
-          className="text-xl sm:text-7xl text-gray-200 font-bold sm:font-light"
+          className="text-xl sm:text-7xl text-gray-200 font-semibold sm:font-light"
           animate={{ fontSize: 30, x: 50 }}
         >
           {slides[currentIndex].name}

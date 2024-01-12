@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { GoogleMap, InfoWindowF, MarkerF, useJsApiLoader } from "@react-google-maps/api";
 import "../../../public/images/logos/logo1.png";
+import MobileNavbar from "../components/MobileNavbar";
+import MobileNavbar2 from "../components/MobileNavbar2";
 export default function Dealerships() {
   const [activeMarker, setActiveMarker] = useState(null);
 
@@ -68,6 +70,7 @@ export default function Dealerships() {
 
   return isLoaded ? (
     <div className="w-screen h-screen">
+      <MobileNavbar2 />
       <GoogleMap
         mapContainerStyle={containerStyle}
         

@@ -3,18 +3,21 @@ import Link from "next/link";
 import BookAService from "./services/BookAService";
 import {motion, AnimatePresence} from "framer-motion"
 import Image from "next/image";
+import MobileNavbar from "../components/MobileNavbar";
+import MobileNavbar2 from "../components/MobileNavbar2";
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      <MobileNavbar2 />
      <Image
         src="https://images.unsplash.com/photo-1625860728869-b22bcd317126?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
         alt="backgroundpic"
+        width={1920}
         height={1080}
-        width={1000}
         className="w-full h-full absolute"
       />
       
-      <div className="relative flex items-center justify-center h-screen gap-8">
+      <div className="relative flex flex-col sm:flex-row items-center justify-center h-screen gap-8">
       
         <BookAService/>
   
