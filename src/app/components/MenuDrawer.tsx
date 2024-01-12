@@ -12,7 +12,7 @@ export default function MenuDrawer() {
           htmlFor="my-drawer-2"
           className="btn btn-ghost text-black drawer-button text-3xl"
         >
-        <GiHamburgerMenu/>
+          <GiHamburgerMenu />
         </label>
       </div>
       <div className="drawer-side">
