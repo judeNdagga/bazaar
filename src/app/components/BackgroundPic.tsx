@@ -5,35 +5,36 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import MobileNavbar from "./MobileNavbar";
 import MobileNavbar2 from "./MobileNavbar2";
+
 export default function BackgroundPic() {
+ 
   const slides = [
     {
       url: "https://hips.hearstapps.com/hmg-prod/images/2022-mitsubishi-eclipse-cross-101-1612907183.jpg?crop=0.871xw:0.736xh;0.00326xw,0.127xh&resize=1200:*",
       name: "Mitsubishi Eclipse Cross",
-      desc: "Incredible Efficiency",
+      desc: "Incredible Efficiency"
     },
     {
       url: "https://hips.hearstapps.com/hmg-prod/images/2024-mitsubishi-mirage-101-64b94568391dc.jpg?crop=0.800xw:0.478xh;0.0391xw,0.373xh&resize=1200:*",
       name: "Mitsubishi Mirage",
-      desc: "Ease of Use",
+      desc: "Ease of Use"
     },
     {
       url: "https://www.mitsubishicars.com/content/dam/mitsubishi-motors-us/images/siteimages/cars/outlander-sport/my24/gallery/2024-mitsubishi-outlander-sport-suv-brown-parked-street.jpg?width=2160&auto=webp&quality=70",
       name: "Mitsubishi Outlander Sport",
-      desc: "Roaring Elegance",
+      desc: "Roaring Elegance"
     },
 
     {
       url: "https://www.mitsubishicars.com/content/dam/mitsubishi-motors-us/images/siteimages/cars/mirage-g4/my24/gallery/carousel_exterior/2024-mitsubishi-mirage-g4-sedan-white-driving-fast-gallery.jpg",
       name: "Mitsubishi Mirage G4",
-      desc: "Tailor-made Prospective",
+      desc: "Tailor-made Prospective"
     },
     {
       url: "https://www.mitsubishicars.com/content/dam/mitsubishi-motors-us/images/siteimages/cars/outlander-phev/my24/gallery/exterior/2024-mitsubishi-outlander-phev-forest.jpg",
       name: "Mitsubishi Outlander",
-      desc: "Incredible Power",
+      desc: "Incredible Power"
     },
   ];
 
@@ -56,29 +57,33 @@ export default function BackgroundPic() {
   };
 
   useEffect(() => {
-    const autoNextSlide = setTimeout(() => {
-      const isLastSlide = currentIndex === slides.length - 1;
-      const newIndex = isLastSlide ? 0 : currentIndex + 1;
-      setCurrentIndex(newIndex);
-    }, 8000);
+  const autoNextSlide = setTimeout(() => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  }, 8000)
 
-    return () => clearTimeout(autoNextSlide);
-  });
+  return () => clearTimeout(autoNextSlide);
+}, );
 
+const OPTIONS: EmblaOptionsType = {}
+const SLIDE_COUNT = 5
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
   return (
     <div className="h-screen w-full m-auto relative group">
       <motion.div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full min-h-screen bg-center bg-cover duration-1000"
+        
+        
+        
       >
-        <MobileNavbar2 />
-        <motion.div
-          className="absolute text-center pt-4 bottom-[27%] left-[10%] sm:top-[20%] sm:left-[10%]"
-          animate={{ x: 80 }}
-          transition={{ ease: "easeOut", duration: 1 }}
+        <motion.div className="absolute text-center pt-4 top-[20%] left-[10%]"
+        animate={{ x: 80 }}
+        transition={{ ease: "easeOut", duration: 1 }}
         >
           <Link href="/pages/buy">
-            <button className="btn text-xs text-white bg-slate-900 hover:bg-slate-50 hover:text-slate-900 border-slate-900 btn-circle h-20 w-20 sm:animate-bounce">
+            <button className="btn text-xs text-white bg-slate-900 hover:bg-slate-50 hover:text-slate-900 border-slate-900 btn-circle h-20 w-20 animate-bounce">
               Discover More
             </button>
           </Link>
@@ -90,17 +95,18 @@ export default function BackgroundPic() {
       {/* Descriptive content */}
 
       <motion.div
-        className="absolute bottom-[5%] text-white sm:left-8 w-[10em] sm:w-[40em] h-48 bg-gradient-to-r pl-4 pt-6"
+        className="absolute bottom-[5%] text-white left-8 w-[40em] h-48 bg-gradient-to-r pl-4 pt-6"
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 1 }}
       >
-        <p className="pt-2 uppercase text-sm">{slides[currentIndex].desc}</p>
-        <motion.h1
-          className="text-xl sm:text-7xl text-gray-200 font-semibold sm:font-light"
-          animate={{ fontSize: 30, x: 50 }}
-        >
-          {slides[currentIndex].name}
-        </motion.h1>
+         <p className="pt-2 uppercase text-sm">
+          {slides[currentIndex].desc}
+        </p>
+        <motion.h1 className="text-7xl text-gray-200 font-light"
+        animate={{ fontSize: 30, x: 50 }}
+        >{slides[currentIndex].name}</motion.h1>
+       
+        
       </motion.div>
 
       {/* Left Arrow */}
