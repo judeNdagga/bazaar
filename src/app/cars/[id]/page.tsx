@@ -9,7 +9,6 @@ import { incrementCarQuantity } from "./actions";
 import Specifications from "./Specifications";
 import Accessories from "./Accessories";
 import Gallery from "./Gallery";
-import MobileNavbar2 from "@/app/components/MobileNavbar2";
 interface CarPageProps {
   params: {
     id: string;
@@ -62,7 +61,6 @@ export default async function CarPage({ params: { id } }: CarPageProps) {
       
 
       <div className="card-body min-h-screen bg-white ">
-        <MobileNavbar2 />
         {/* Car Name */}
         <div className="text-center text-black font-bold pt-20 pb-8">
           <h1 className="text-3xl">{car.name}</h1>
@@ -89,7 +87,7 @@ export default async function CarPage({ params: { id } }: CarPageProps) {
           // image={car.image}
         />
         </div>
-         <div className="sm:text-right sm:p-2">
+         <div className="text-right p-2">
               <img src={car.imageUrl}
               alt="cars pic" 
               width={500}

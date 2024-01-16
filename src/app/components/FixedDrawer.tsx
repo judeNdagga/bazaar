@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function FixedDrawer() {
   return (
     <motion.div
-      className="fixed top-[33%] hidden text-white sm:grid grid-cols-1 gap-2 text-3xl right-0"
+      className="fixed top-[33%] text-white grid grid-cols-1 gap-2 text-3xl right-0"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}

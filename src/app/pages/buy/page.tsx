@@ -1,6 +1,4 @@
 import CarCard from "@/app/components/CarCard";
-import MobileNavbar from "@/app/components/MobileNavbar";
-import MobileNavbar2 from "@/app/components/MobileNavbar2";
 import PaginationBar from "@/app/components/PaginationBar";
 import prisma from "@/lib/db/prisma";
 import Image from "next/image";
@@ -28,8 +26,7 @@ export default async function BuyHomePage({
 
   return (
     <div className="bg-white min-h-screen p-4">
-      <MobileNavbar2/>
-      <div className="pt-16">
+      <div className="">
         <h1 className="text-black card-body text-center text-3xl">
           DISCOVER MITSUBISHI VEHICLES
         </h1>
