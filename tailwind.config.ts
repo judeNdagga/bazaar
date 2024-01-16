@@ -11,7 +11,7 @@ const config: Config = {
       {
         mytheme: {
         
-"primary": "#15238e",
+"primary": "white",
         
 "secondary": "#ef8def",
         
