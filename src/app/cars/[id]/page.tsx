@@ -62,7 +62,7 @@ export default async function CarPage({ params: { id } }: CarPageProps) {
       
 
       <div className="card-body min-h-screen bg-white ">
-        <MobileNavbar2 />
+         <MobileNavbar2 />
         {/* Car Name */}
         <div className="text-center text-black font-bold pt-20 pb-8">
           <h1 className="text-3xl">{car.name}</h1>

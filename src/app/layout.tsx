@@ -5,8 +5,6 @@ import NavBar from "./Navbar/Navbar";
 import Footer from "./Footer";
 import SessionProvider from "./SessionProvider"
 import FixedDrawer from "./components/FixedDrawer";
-import MobileNavbar from "./components/MobileNavbar";
-import MobileNavbar2 from "./components/MobileNavbar2";
 
 const inter = Inter({ subsets: ["latin"] });
 

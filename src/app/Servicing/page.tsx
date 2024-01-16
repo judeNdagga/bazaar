@@ -3,7 +3,6 @@ import Link from "next/link";
 import BookAService from "./services/BookAService";
 import {motion, AnimatePresence} from "framer-motion"
 import Image from "next/image";
-import MobileNavbar from "../components/MobileNavbar";
 import MobileNavbar2 from "../components/MobileNavbar2";
 export default function Home() {
   return (

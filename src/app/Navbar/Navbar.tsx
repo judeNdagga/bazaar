@@ -13,7 +13,6 @@ import MenuDrawer from "../components/MenuDrawer";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import MobileNavbar from "../components/MobileNavbar";
 // export async function searchProducts(formData: FormData) {
 //   "use server";
 

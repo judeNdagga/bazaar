@@ -4,7 +4,6 @@ import BookAService from "../services/BookAService";
 
 import axios from "axios";
 import { useState, useEffect } from "react";
-import MobileNavbar from "@/app/components/MobileNavbar";
 import MobileNavbar2 from "@/app/components/MobileNavbar2";
 export default function SpareParts() {
   async function addService(formData: FormData) {

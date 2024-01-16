@@ -1,5 +1,4 @@
 import CarCard from "@/app/components/CarCard";
-import MobileNavbar from "@/app/components/MobileNavbar";
 import MobileNavbar2 from "@/app/components/MobileNavbar2";
 import PaginationBar from "@/app/components/PaginationBar";
 import prisma from "@/lib/db/prisma";
