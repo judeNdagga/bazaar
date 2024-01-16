@@ -5,9 +5,8 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import '../css/embla.css'
-import EmblaCarousel from "./Carousel";
-import { EmblaOptionsType } from "embla-carousel-react";
+import MobileNavbar2 from "./MobileNavbar2";
+
 export default function BackgroundPic() {
  
   const slides = [
