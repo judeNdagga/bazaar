@@ -4,6 +4,7 @@ import BookAService from "../services/BookAService";
 
 import axios from "axios";
 import { useState, useEffect } from "react";
+import MobileNavbar2 from "@/app/components/MobileNavbar2";
 export default function SpareParts() {
   async function addService(formData: FormData) {
     const company = formData.get("company")?.toString();
@@ -43,6 +44,7 @@ export default function SpareParts() {
 
   return (
     <div className="min-h-screen">
+      <MobileNavbar2 />
       <div>
         <div
           className="hero h-[42rem]"
@@ -53,13 +55,13 @@ export default function SpareParts() {
         >
           {/* <!-- component --> */}
         </div>
-        <div className="absolute text-white top-[20%] left-20 w-[40em] h-48 bg-gradient-to-r from-black from-10% via-black via-25% pl-4 pt-6">
-          <h1 className="text-5xl uppercase">SPARE PARTS AND REPAIRS</h1>
+        <div className="absolute text-white top-[25em] sm:top-[20%] left-20 sm:w-[40em] w-[16em] h-48 bg-gradient-to-r from-black from-10% via-black via-25% pl-4 pt-6">
+          <h1 className="text-2xl sm:text-5xl uppercase">SPARE PARTS AND REPAIRS</h1>
           <p className="pt-2">Does your Mitsubishi need repairs?</p>
         </div>
       </div>
       <div className="bg-[#383839] text-white">
-        <p className="p-32 pt-6 font-sans">
+        <p className="sm:p-32 p-16 pt-6 font-sans">
           We want to make sure that your Mitsubishi is as safe as can be, that
           it performs perfectly and that it’ll be as reliable as possible. So,
           when you visit one of our Approved Mitsubishi dealers you can rest
@@ -74,13 +76,13 @@ export default function SpareParts() {
 
       <div className="bg-gray-300 justify-center">
         <div className="p-8">
-          <p className="p-16 text-4xl text-black text-center">
+          <p className="sm:p-16 p-6 text-2xl sm:text-4xl text-black text-center">
             BOOK HERE FOR GENUINE MITSUBISHI PARTS AND REPAIRS
           </p>
 
           {/* The Form */}
           <form method="dialog" action={addService}>
-            <div className="grid grid-cols-3 gap-8 p-2">
+            <div className="grid sm:grid-cols-3 grid-cols-2 gap-8 p-2">
               {/* 1st row */}
 
               <select className="select select-bordered w-full max-w-xs text-gray-500">
