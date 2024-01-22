@@ -20,10 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <SessionProvider>
         <NavBar />
-        <main className="max-w-full m-auto min-w-[300px] z-10 bg-base-300 min-h-screen">{children}
+        <main className="max-w-full m-auto min-w-[240px] z-10 bg-base-300 min-h-full overflow-hidden relative">{children}
         <FixedDrawer/>
         </main>
         <Footer />
