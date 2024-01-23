@@ -2,7 +2,9 @@
 
 export default function Gallery() {
   return (
+    
     <div className="grid xl:grid-cols-3 sm:grid-cols-1 gap-10">
+      
       <img
         src="https://www.mitsubishicars.com/content/dam/mitsubishi-motors-us/images/siteimages/cars/outlander/my24/gallery/exterior/2024-mitsubishi-outlander-suv-silver-angled-parked.jpg"
         alt="acc pic"
