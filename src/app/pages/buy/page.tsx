@@ -26,8 +26,8 @@ export default async function BuyHomePage({
   });
 
   return (
-    <div className="bg-white min-h-screen p-4">
-      <MobileNavbar2/>
+    <div className="bg-white overflow-hidden">
+    
       <div className="pt-16">
         <h1 className="text-black card-body text-center text-3xl">
           DISCOVER MITSUBISHI VEHICLES

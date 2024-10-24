@@ -1,9 +1,9 @@
 import Image from "next/image"
 export default function Footer(){
     return(
-        <>
+      
         
-        <footer className="footer sm:grid hidden p-10 bg-slate-900 text-white relative">
+        <footer className="footer p-10 bg-black text-white">
   <nav>
     <header className="text-amber-300 uppercase font-bold">Services</header> 
     <a className="link link-hover">Branding</a> 
@@ -38,6 +38,6 @@ export default function Footer(){
     </div>
   </nav>
 </footer>
-</>
+
     )
 }

@@ -44,7 +44,7 @@ export default function SpareParts() {
 
   return (
     <div className="min-h-screen">
-      <MobileNavbar2 />
+      
       <div>
         <div
           className="hero h-[42rem]"

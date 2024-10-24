@@ -48,63 +48,63 @@ export default function Specifications() {
       <div className="flex justify-center">
         <div className="grid sm:grid-cols-1 xl:grid-cols-3 gap-16">
           {/* engine */}
-          <div className="w-64 h-48 space-y-4">
+          <div className="space-y-4">
             <div className="text-5xl">
-              <PiEngineLight />
+              <PiEngineLight className="text-red-400" />
             </div>
             <div>
-              <h1>ENGINE</h1>
-              <p className="font-light">Displacement (cc) : 2755</p>
-              <p className="font-light">Fuel type : Diesel</p>
+              <h1 className="text-4xl">ENGINE</h1>
+              <p className="font-medium text-gray-400 ">Displacement (cc) : 2755</p>
+              <p className="font-medium text-gray-400 ">Fuel type : Diesel</p>
             </div>
           </div>
           {/* dimensions */}
-          <div className="w-64 h-48 space-y-4">
+          <div className="space-y-4">
             <div className="text-5xl">
-              <RxDimensions />
+              <RxDimensions className="text-red-400" />
             </div>
             <div>
-              <h1>DIMENSIONS</h1>
-              <p className="font-light">
+              <h1 className="text-4xl">DIMENSIONS</h1>
+              <p className="font-medium text-gray-400 ">
                 Dimensions (Lxwxh) in mm : 4795 x 1855 x 1835
               </p>
-              <p className="font-light">Ground clearance (mm) : 279</p>
-              <p className="font-light">Wheelbase (mm) : 2745</p>
+              <p className="font-medium text-gray-400 ">Ground clearance (mm) : 279</p>
+              <p className="font-medium text-gray-400 ">Wheelbase (mm) : 2745</p>
             </div>
           </div>
           {/* transmission */}
-          <div className="w-64 h-48 space-y-4">
+          <div className="space-y-4">
             <div className="text-5xl">
-              <TbManualGearbox />
+              <TbManualGearbox className="text-red-400" />
             </div>
             <div>
-              <h1>TRANSMISSION</h1>
-              <p className="font-light">Gearbox : Automatic</p>
-              <p className="font-light">Transmission : Part time manual 4x4</p>
+              <h1 className="text-4xl">TRANSMISSION</h1>
+              <p className="font-medium text-gray-400 ">Gearbox : Automatic</p>
+              <p className="font-medium text-gray-400 ">Transmission : Part time manual 4x4</p>
             </div>
           </div>
           {/* weight */}
-          <div className="w-64 h-48 space-y-4">
+          <div className="space-y-4">
             <div className="text-5xl">
-              <GiWeight />
+              <GiWeight className="text-red-400" />
             </div>
             <div>
-              <h1>WEIGHT</h1>
-              <p className="font-light">Curb weight (kg) : 2185</p>
-              <p className="font-light">Fuel tank capacity (L) : 80</p>
+              <h1 className="text-4xl">WEIGHT</h1>
+              <p className="font-medium text-gray-400 ">Curb weight (kg) : 2185</p>
+              <p className="font-medium text-gray-400 ">Fuel tank capacity (L) : 80</p>
             </div>
           </div>
           {/* warranty */}
-          <div className="w-64 h-48 space-y-4">
+          <div className="space-y-4">
             <div className="text-5xl">
-              <GiSpanner />
+              <GiSpanner className="text-red-400" />
             </div>
             <div>
-              <h1>WARRANTY</h1>
-              <p className="font-light">
+              <h1 className="text-4xl">WARRANTY</h1>
+              <p className="font-medium text-gray-400 ">
                 Manufacturer Warranty : 3 years / 100 000 Km
               </p>
-              <p className="font-light">Retail Network : Mitsubishi Uganda</p>
+              <p className="font-medium text-gray-400 ">Retail Network : Mitsubishi Uganda</p>
             </div>
           </div>
           {/* brochure */}
@@ -114,7 +114,7 @@ export default function Specifications() {
                 href="/docs/brochure.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-wide btn"
+                className="inline-flex h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200"
               >
                 <button>BROCHURE</button>
               </a>
@@ -122,13 +122,13 @@ export default function Specifications() {
                 href="/docs/brochure.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-wide btn"
+                className="inline-flex h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200"
               >
                 <button>INFORMATION</button>
               </a>
-              <div className="btn bg-slate-900 text-gray-200">
+              
                 <BookATestDrive />
-              </div>
+              
             </div>
           </div>
         </div>

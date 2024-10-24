@@ -4,7 +4,7 @@ import MobileNavbar2 from "@/app/components/MobileNavbar2";
 export default function Services() {
   return (
     <div className="min-h-screen">
-      <MobileNavbar2 />
+      
       <div>
       
         <div

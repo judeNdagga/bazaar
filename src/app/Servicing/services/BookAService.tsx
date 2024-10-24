@@ -70,12 +70,12 @@ export default function BookAService() {
 
       <ChakraProvider>
       
-       <motion.button onClick={onOpen} className="btn btn-wide glass text-white"
+       <motion.button onClick={onOpen} className="inline-flex h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200"
        initial={{y: 600, opacity: 0}}
        animate={{ y: 0, opacity: 1 }}
        transition={{ duration: 0.5, delay: 0.3 }}
        >
-        Book A Service
+        BOOK A SERVICE
         </motion.button>
 
 <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>

@@ -82,121 +82,124 @@ export default function BookATestDrive() {
   }
 
   return (
-    <div>
-      <ChakraProvider>
-        <button onClick={onOpen}>Book A Test Drive</button>
+    <ChakraProvider>
+      <button
+        onClick={onOpen}
+        className="inline-flex h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200"
+      >
+        BOOK A TEST DRIVE
+      </button>
 
-        <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
-          <ModalOverlay />
-          <ModalContent>
-            <ModalHeader className="bg-slate-900 text-white text-center">
-              Book A Test Drive
-            </ModalHeader>
-            <ModalCloseButton />
-            <ModalBody className="bg-white">
-              <form action={addTestDrive}>
-                <div className="grid grid-cols-2 gap-8 p-2 text-black">
-                  {/* 1st row */}
-                  <input
-                    type="number"
-                    name="civility"
-                    placeholder="Civility"
-                    className="input input-bordered w-full max-w-xs"
-                  />
+      <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader className="bg-slate-900 text-white text-center">
+            Book A Test Drive
+          </ModalHeader>
+          <ModalCloseButton />
+          <ModalBody className="bg-white">
+            <form action={addTestDrive}>
+              <div className="grid grid-cols-2 gap-8 p-2 text-black">
+                {/* 1st row */}
+                <input
+                  type="number"
+                  name="civility"
+                  placeholder="Civility"
+                  className="input input-bordered w-full max-w-xs"
+                />
 
-                  <input
-                    type="text"
-                    name="company"
-                    placeholder="Company"
-                    className="input input-bordered w-full max-w-xs"
-                  />
-                  {/* second row */}
-                  <input
-                    type="text"
-                    name="first_name"
-                    placeholder="First Name*"
-                    className="input input-bordered w-full max-w-xs"
-                  />
-                  <input
-                    type="text"
-                    name="last_name"
-                    placeholder="Second Name*"
-                    className="input input-bordered w-full max-w-xs"
-                  />
-                  {/* third row */}
-                  <input
-                    type="text"
-                    name="email"
-                    placeholder="E-mail*"
-                    className="input input-bordered w-full max-w-xs"
-                  />
-                  <input
-                    type="text"
-                    name="phone_number"
-                    placeholder="Phone*"
-                    className="input input-bordered w-full max-w-xs"
-                  />
-                  {/* fourth row */}
-                  <input
-                    type="number"
-                    name="model"
-                    placeholder="Model*"
-                    className="input input-bordered w-full max-w-xs"
-                  />
-                  <input
-                    type="text"
-                    name="city"
-                    placeholder="City"
-                    className="input input-bordered w-full max-w-xs"
-                  />
-                  <input
-                    type="text"
-                    name="address"
-                    placeholder="Address"
-                    className="input input-bordered w-full max-w-xs"
-                  />
-                  <input
-                    type="text"
-                    name="country"
-                    placeholder="country"
-                    className="input input-bordered w-full max-w-xs"
-                  />
-                  <input
-                    type="date"
-                    name="date"
-                    placeholder="Desired Date"
-                    className="input input-bordered w-full max-w-xs bg-info text-white"
-                  />
-                  <input
-                    type="time"
-                    name="time"
-                    placeholder="Desired Time"
-                    className="input input-bordered w-full max-w-xs bg-info text-white"
-                  />
+                <input
+                  type="text"
+                  name="company"
+                  placeholder="Company"
+                  className="input input-bordered w-full max-w-xs"
+                />
+                {/* second row */}
+                <input
+                  type="text"
+                  name="first_name"
+                  placeholder="First Name*"
+                  className="input input-bordered w-full max-w-xs"
+                />
+                <input
+                  type="text"
+                  name="last_name"
+                  placeholder="Second Name*"
+                  className="input input-bordered w-full max-w-xs"
+                />
+                {/* third row */}
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="E-mail*"
+                  className="input input-bordered w-full max-w-xs"
+                />
+                <input
+                  type="text"
+                  name="phone_number"
+                  placeholder="Phone*"
+                  className="input input-bordered w-full max-w-xs"
+                />
+                {/* fourth row */}
+                <input
+                  type="number"
+                  name="model"
+                  placeholder="Model*"
+                  className="input input-bordered w-full max-w-xs"
+                />
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="City"
+                  className="input input-bordered w-full max-w-xs"
+                />
+                <input
+                  type="text"
+                  name="address"
+                  placeholder="Address"
+                  className="input input-bordered w-full max-w-xs"
+                />
+                <input
+                  type="text"
+                  name="country"
+                  placeholder="country"
+                  className="input input-bordered w-full max-w-xs"
+                />
+                <input
+                  type="date"
+                  name="date"
+                  placeholder="Desired Date"
+                  className="input input-bordered w-full max-w-xs bg-info text-white"
+                />
+                <input
+                  type="time"
+                  name="time"
+                  placeholder="Desired Time"
+                  className="input input-bordered w-full max-w-xs bg-info text-white"
+                />
 
-                  <input
-                    type="text"
-                    name="message"
-                    placeholder="Message"
-                    className="input input-bordered w-full max-w-xs"
-                  />
+                <input
+                  type="text"
+                  name="message"
+                  placeholder="Message"
+                  className="input input-bordered w-full max-w-xs"
+                />
 
-                  {/* if there is a button in form, it will close the modal */}
-                </div>
-              </form>
-            </ModalBody>
+                {/* if there is a button in form, it will close the modal */}
+              </div>
+            </form>
+          </ModalBody>
 
-            <ModalFooter className="bg-white">
-              <button
-                className="btn btn-wide btn-ghost bg-slate-900 text-white hover:text-slate-900"
-                type="submit"
-              >
-                Submit
-              </button>
-            </ModalFooter>
-          </ModalContent>
-        </Modal>
-      </ChakraProvider>
-    </div>
+          <ModalFooter className="bg-white">
+            <button
+              className="btn btn-wide btn-ghost bg-slate-900 text-white hover:text-slate-900"
+              type="submit"
+            >
+              Submit
+            </button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </ChakraProvider>
   );
 }
