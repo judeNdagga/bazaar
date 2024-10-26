@@ -28,12 +28,12 @@ export default async function BuyHomePage({
   return (
     <div className="bg-white overflow-hidden">
     
-      <div className="pt-16">
-        <h1 className="text-black card-body text-center text-3xl">
+      <div className="">
+        <h1 className="text-black font-bold card-body text-center text-3xl xl:text-4xl">
           DISCOVER MITSUBISHI VEHICLES
         </h1>
       </div>
-      <div className="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-12">
         {(currentPage === 1 ? cars.slice(0) : cars).map((car) => (
           <CarCard car={car} key={car.id} />
         ))}

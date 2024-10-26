@@ -69,7 +69,7 @@ export default function Dealerships() {
 
   return isLoaded ? (
     <div className="w-screen h-screen">
-      <MobileNavbar2 />
+      
       <GoogleMap
         mapContainerStyle={containerStyle}
         

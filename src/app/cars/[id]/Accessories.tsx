@@ -1,6 +1,6 @@
 export default function Accessories(){
     return(
-        <div className="sm:flex justify-center sm:gap-10">
+        <div className="grid grid-cols-2 ml-16 sm:ml-0 gap-y-8 sm:gap-y-0 mb-12 sm:flex justify-center sm:gap-10">
             <div className="tooltip tooltip-warning" data-tip="Air Conditioning">
             <img src="https://www.toyota.co.ug/media/gamme/equipement_groups/graph/66-icon.png" alt="acc pic" />
             </div>

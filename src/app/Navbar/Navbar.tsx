@@ -38,7 +38,7 @@ export default async function NavBar() {
   const navItems = [
     {
       name: <VehicleDropdown/>,
-      link: "/",
+      link: "/pages/buy",
       icon: <FaCar className="h-8 w-8 text-neutral-500 dark:text-white" />,
     },
     {

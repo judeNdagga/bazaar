@@ -13,7 +13,7 @@ export default function Home() {
         alt="backgroundpic"
         width={1920}
         height={1080}
-        className="w-full h-full absolute brightness-50"
+        className="w-full h-full absolute brightness-50 object-cover"
       />
       
       <div className="relative flex flex-col sm:flex-row items-center justify-center h-screen gap-8">

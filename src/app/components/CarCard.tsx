@@ -12,22 +12,22 @@ export default function CarCard({ car }: CarCardProps) {
   return (
     <Link
       href={"../../cars/" + car.id}
-      className="card w-full bg-white hover:shadow-xl transition-shadow"
+      className="w-full bg-black text-white hover:text-red-400 hover:scale-110 transition duration-300"
     >
 
       <figure>
         <Image 
           src={car.imageUrl}
           alt={car.name}
-          width={800}
-          height={400}
-          className="h-48 object-cover"
+          width={1360}
+          height={1080}
+          className="h-[16em] xl:h-[28em] object-cover"
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title text-black">
+        <h2 className="card-title">
           {car.name}
-          {isNew && <div className="badge badge-secondary">NEW</div>}
+          {/* {isNew && <div className="badge badge-secondary">NEW</div>} */}
         </h2>
       
         {/* <p>{car.description}</p> */}

@@ -11,7 +11,7 @@ export default function HomePage() {
       {/* <BackgroundPic/> */}
       <AltBackgroundSlider />
       <div className="bg-white">
-        <div className="xl:flex h-[38em]">
+        <div className="xl:flex xl:h-[38em]">
           <div className="xl:w-[45%] xl:mt-16">
             <img
               src="https://images.unsplash.com/photo-1628684014602-88da45adfb43?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -24,30 +24,31 @@ export default function HomePage() {
               REASONS TO LOVE
             </h1>
             <h1 className="mt-4 xl:ml-40 text-5xl font-bold">Built To Last</h1>
-            <p className="xl:mr-40 xl:ml-40 mt-4">
+            <p className="xl:mr-40 xl:ml-40 xl:mt-4 p-6 xl:p-0">
               Every Mitsubishi is built with quality parts and precision
               engineering, so you can count on your Mitsubishi vehicle to be
               with you for the long road ahead. This legendary reliability and
               longevity has earned awards from automotive experts and inspired
               loyalty from Subaru drivers everywhere.
             </p>
-            <button className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] ml-20 transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200">
+            <a href="/pages/buy" 
+            className="inline-flex xl:ml-40 xl:mt-6 h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200">
               START SHOPPING
-            </button>
+            </a>
           </div>
         </div>
       </div>
       {/* second div */}
       <div className="bg-white">
-        <p className="sm:ml-40 pt-20">
+        <p className="text-center sm:text-left sm:ml-40 pt-10 sm:pt-20">
           <h1 className="text-xs font-extrabold text-gray-400 tracking-widest">
             AWARDS & ACCOLADES
           </h1>
-          <h1 className="text-black font-bold text-7xl mt-8">
+          <h1 className="text-black font-bold text-6xl sm:text-7xl mt-8">
             Winning, winning, <br />
             winning.
           </h1>
-          <p className="mt-8 sm:w-[60%]">
+          <p className="xl:mt-8 p-6 sm:p-0 sm:w-[60%]">
             Since their introduction, the 2023 and all-new 2024 Outlander
             Plug-in Hybrid have garnered awards and accolades for their
             exquisite interior and exterior styling, driving dynamics, and
@@ -130,7 +131,7 @@ export default function HomePage() {
       {/* 2024 mirage level */}
 
       <div className="bg-white">
-        <div className="xl:flex h-[38em]">
+        <div className="xl:flex xl:h-[38em]">
           <div className="xl:w-[50%] bg-black xl:mt-16 text-center xl:text-left text-white">
             <h1 className="xl:mt-28 xl:ml-40 text-xs font-semibold tracking-widest">
               2024 MIRAGE
@@ -144,9 +145,10 @@ export default function HomePage() {
               for fun and adventure. Sporty styling, flexible cargo room and
               loads of standard features make the Mirage stand out.
             </p>
-            <button className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] ml-20 transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200">
+            <a href="/pages/buy" 
+            className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200">
               EXPLORE MIRAGE
-            </button>
+            </a>
           </div>
           <div className="xl:w-[50%] xl:mt-16">
             <img
@@ -161,7 +163,7 @@ export default function HomePage() {
       {/* 2024 mirage g4 level */}
 
       <div className="bg-white">
-        <div className="xl:flex h-[38em]">
+        <div className="xl:flex xl:h-[38em]">
           <div className="xl:w-[50%]">
             <img
               src="https://www.mitsubishicars.com/content/dam/mitsubishi-motors-us/images/siteimages/cars/mirage-g4/my24/overview/2024-mitsubishi-mirage-g4-sedan-white-driving-fast.jpg?width=1080&auto=webp"
@@ -181,9 +183,10 @@ export default function HomePage() {
               control and sophisticated urban style, so you can take on every
               challenge and adventure the city has to offer.
             </p>
-            <button className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] ml-20 transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200">
+            <a href="/pages/buy" 
+            className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200">
               EXPLORE MIRAGE G4
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -191,7 +194,7 @@ export default function HomePage() {
       {/* after mirage g4 level */}
 
       <div className="bg-white">
-        <div className="xl:flex h-[28em] items-center">
+        <div className="xl:flex xl:h-[28em] items-center pb-4 xl:pb-0">
           <div className="xl:w-[50%] text-center text-black">
             <h1 className="xl:mt-28 text-4xl font-extrabold">
               Talk To Our Customer Support
@@ -228,9 +231,10 @@ export default function HomePage() {
               With multiple Mitsubishi dealerships across Uganda, there’s
               bound to be a Mitsubishi near you. Stop in for a visit anytime.
             </p>
-            <button className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] ml-20 transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200">
+            <a href="/Dealerships" 
+            className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200">
               FIND A DEALER
-            </button>
+            </a>
           </div>
           <div className="xl:w-[50%] xl:mt-16">
             <img
