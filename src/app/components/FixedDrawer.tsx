@@ -25,7 +25,7 @@ export default function FixedDrawer() {
           tabIndex={0}
           className="dropdown-content z-[1] menu rounded-box w-44"
         >
-          <a className="bg-black text-[0.7rem] hover:bg-white hover:text-black">
+          <a className="text-[0.7rem]">
             <BookATestDrive />
           </a>
         </li>
