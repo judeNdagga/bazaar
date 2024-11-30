@@ -31,8 +31,10 @@ export default function HomePage() {
               longevity has earned awards from automotive experts and inspired
               loyalty from Subaru drivers everywhere.
             </p>
-            <a href="/pages/buy" 
-            className="inline-flex xl:ml-40 xl:mt-6 h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200">
+            <a
+              href="/pages/buy"
+              className="inline-flex xl:ml-40 xl:mt-6 h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200"
+            >
               START SHOPPING
             </a>
           </div>
@@ -40,7 +42,7 @@ export default function HomePage() {
       </div>
       {/* second div */}
       <div className="bg-white">
-        <p className="text-center sm:text-left sm:ml-40 pt-10 sm:pt-20">
+        <p className="text-center xl:text-left xl:ml-40 pt-10 sm:pt-20">
           <h1 className="text-xs font-extrabold text-gray-400 tracking-widest">
             AWARDS & ACCOLADES
           </h1>
@@ -48,7 +50,7 @@ export default function HomePage() {
             Winning, winning, <br />
             winning.
           </h1>
-          <p className="xl:mt-8 p-6 sm:p-0 sm:w-[60%]">
+          <p className="xl:mt-8 p-6 xl:p-0 xl:w-[60%]">
             Since their introduction, the 2023 and all-new 2024 Outlander
             Plug-in Hybrid have garnered awards and accolades for their
             exquisite interior and exterior styling, driving dynamics, and
@@ -57,12 +59,13 @@ export default function HomePage() {
           </p>
 
           {/* card level */}
-          <div className="md:flex gap-8 mt-16">
-            <div className="w-96 shadow-xl">
+          <div className="xl:flex gap-8 mt-16">
+            <div className="w-full xl:w-96 shadow-xl">
               <figure>
                 <img
                   src="https://www.mitsubishicars.com/content/dam/mitsubishi-motors-us/images/siteimages/homepage/awards/outlander_home_iihs_card.jpg?width=720&auto=webp&quality=70"
                   alt="Shoes"
+                  className="w-full"
                 />
               </figure>
               <div className="card-body">
@@ -83,11 +86,12 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="w-96 shadow-xl">
+            <div className="w-full xl:w-96 shadow-xl">
               <figure>
                 <img
                   src="https://www.mitsubishicars.com/content/dam/mitsubishi-motors-us/images/siteimages/motor-week-drivers-award/phev-new-award.jpg?width=720&auto=webp&quality=70"
                   alt="Shoes"
+                  className="w-full"
                 />
               </figure>
               <div className="card-body">
@@ -105,11 +109,12 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="w-96 shadow-xl">
+            <div className="w-full xl:w-96 shadow-xl">
               <figure>
                 <img
                   src="https://www.mitsubishicars.com/content/dam/mitsubishi-motors-us/images/siteimages/awards/family-award/Home_EditorialMediumCard.jpg?width=720&auto=webp&quality=70"
                   alt="Shoes"
+                  className="w-full"
                 />
               </figure>
               <div className="card-body">
@@ -145,8 +150,10 @@ export default function HomePage() {
               for fun and adventure. Sporty styling, flexible cargo room and
               loads of standard features make the Mirage stand out.
             </p>
-            <a href="/pages/buy" 
-            className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200">
+            <a
+              href="/pages/buy"
+              className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200"
+            >
               EXPLORE MIRAGE
             </a>
           </div>
@@ -183,8 +190,10 @@ export default function HomePage() {
               control and sophisticated urban style, so you can take on every
               challenge and adventure the city has to offer.
             </p>
-            <a href="/pages/buy" 
-            className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200">
+            <a
+              href="/pages/buy"
+              className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200"
+            >
               EXPLORE MIRAGE G4
             </a>
           </div>
@@ -228,11 +237,13 @@ export default function HomePage() {
               Find Local Dealerships
             </h1>
             <p className="xl:mr-40 xl:ml-40 mt-4">
-              With multiple Mitsubishi dealerships across Uganda, there’s
-              bound to be a Mitsubishi near you. Stop in for a visit anytime.
+              With multiple Mitsubishi dealerships across Uganda, there’s bound
+              to be a Mitsubishi near you. Stop in for a visit anytime.
             </p>
-            <a href="/Dealerships" 
-            className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200">
+            <a
+              href="/Dealerships"
+              className="inline-flex xl:ml-40 mt-6 h-12 w-[15em] hover:w-[16em] transition-all duration-300 animate-shimmer items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white hover:text-red-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-200"
+            >
               FIND A DEALER
             </a>
           </div>
@@ -246,14 +257,13 @@ export default function HomePage() {
         </div>
       </div>
       <div className="bg-white">
-        
         <p className="xl:ml-40 xl:mr-40 pt-12">
-        <div className="divider"></div>
+          <div className="divider"></div>
           <h1 className="font-bold text-gray-400">DISCLAIMER</h1>
           <p className="mt-8 text-gray-400">
-            This website is in no way connected to the Ugandan branch of Mitsubishi Motors.
+            This website is in no way connected to the Ugandan branch of
+            Mitsubishi Motors.
           </p>
-
         </p>
       </div>
     </div>
