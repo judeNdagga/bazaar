@@ -37,28 +37,27 @@ export default async function NavBar() {
   // }
   const navItems = [
     {
-      name: <VehicleDropdown/>,
+      name: <VehicleDropdown />,
       link: "/pages/buy",
       icon: <FaCar className="h-8 w-8 text-neutral-500 dark:text-white" />,
     },
     {
       name: "SERVICING",
       link: "/Servicing",
-      icon: <GiAutoRepair className="h-8 w-8 text-neutral-500 dark:text-white" />,
+      icon: (
+        <GiAutoRepair className="h-8 w-8 text-neutral-500 dark:text-white" />
+      ),
     },
     {
       name: "DEALERSHIPS",
       link: "/Dealerships",
-      icon: (
-        <FaStoreAlt className="h-8 w-8 text-neutral-500 dark:text-white" />
-      ),
+      icon: <FaStoreAlt className="h-8 w-8 text-neutral-500 dark:text-white" />,
     },
   ];
 
   return (
     <div className="relative w-full">
       <FloatingNav navItems={navItems} />
-     
     </div>
     // <div className="bg-primary absolute sm:fixed w-full z-[12]">
     //   <div className="navbar sm:flex hidden max-w-7xl m-auto flex-col sm:flex-row gap-2 p-[0.1px]">
@@ -68,38 +67,38 @@ export default async function NavBar() {
     //       </Link>
     //     </div>
 
-        /* navbar options */
+    /* navbar options */
 
-        // <div className="flex-1">
-        //   <h1 className="text-black font-semibold font-sans uppercase text-2xl">
-        //     Mitsubishi motors Uganda
-        //   </h1>
-        // </div>
+    // <div className="flex-1">
+    //   <h1 className="text-black font-semibold font-sans uppercase text-2xl">
+    //     Mitsubishi motors Uganda
+    //   </h1>
+    // </div>
 
-        /* services section */
+    /* services section */
 
-        // <div className="text-black flex p-2">
-        //   <VehicleDropdown />
+    // <div className="text-black flex p-2">
+    //   <VehicleDropdown />
 
-        //   <Link href="/Servicing">
-        //     <summary className="btn hover:bg-black hover:text-white p-2 btn-ghost">
-        //       SERVICING
-        //     </summary>
-        //   </Link>
+    //   <Link href="/Servicing">
+    //     <summary className="btn hover:bg-black hover:text-white p-2 btn-ghost">
+    //       SERVICING
+    //     </summary>
+    //   </Link>
 
-        //   <Link href="/Dealerships">
-        //     <summary className="btn hover:bg-black hover:text-white p-2 btn-ghost">
-        //       DEALERSHIPS
-        //     </summary>
-        //   </Link>
-        // </div>
+    //   <Link href="/Dealerships">
+    //     <summary className="btn hover:bg-black hover:text-white p-2 btn-ghost">
+    //       DEALERSHIPS
+    //     </summary>
+    //   </Link>
+    // </div>
 
-        /* menu section */
-        // <div>
-        //   <MenuDrawer />
-        // </div>
-        // <div className="flex-none gap-2">
-          /* <form action={searchProducts}>
+    /* menu section */
+    // <div>
+    //   <MenuDrawer />
+    // </div>
+    // <div className="flex-none gap-2">
+    /* <form action={searchProducts}>
                   <div className="form-control">
                     <input 
                     name="searchQuery"
@@ -108,11 +107,11 @@ export default async function NavBar() {
                     />
                   </div>
                 </form> */
-          /* <ShoppingCartButton cart={cart}/>
+    /* <ShoppingCartButton cart={cart}/>
               <UserMenuButton session={session}/> */
-      //   </div>
-      // </div>
-      /* <MobileNavbar /> */
+    //   </div>
+    // </div>
+    /* <MobileNavbar /> */
     // </div>
   );
 }
